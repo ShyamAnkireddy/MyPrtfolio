@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap');
+        body {
+            background-color: #121212;
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+            outline: none;
+            text-decoration: none;
+            transition: 0.2s linear;
+            color: #fff;
+            overflow-x: hidden;
+            animation: fadeIn 2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0.5;
+                transform: translateX(-0.625em);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 0.625em;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #fff;
+            border-radius: 0.375em;
+        }
+
+        ul {
+            display: flex;
+            width: 84%;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        li {
+            display: inline-block;
+            list-style: none;
+            font-weight: bold;
+            font-size: large;
+            padding-bottom: 1.875em; 
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        li a {
+            margin: 0.3125em 1.25em;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            font-family: 'Monospace', cursive;
+        }
+
+        li a:hover {
+            color: #ff670b;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .project {
+            border-radius: 0.625em;
+            overflow: hidden;
+            transition: 0.7s ease-in-out;
+        }
+
+        .project:hover {
+            transform: scale(1.1);
+        }
+
+        .project img {
+            width: 25em;
+            height: 25em;
+            border-radius: 0.625em;
+            display: block;
+            transition: filter 0.5s ease;
+        }
+
+        .project:hover img {
+            filter: blur(0.0625em);
+        }
+
+        .linux {
+            margin-left: 7.5em;
+        }
+
+        .record {
+            margin-right: 11.25em;
+        }
+
+        .descriptions {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .description {
+            border-radius: 0.625em;
+            overflow: hidden;
+            transition: 0.7s ease-in-out;
+        }
+
+        .description p {
+            margin-top: 2.5em;
+            margin-bottom: 2.5em;
+            text-align: justify;
+        }
+
+        .linux-description {
+            margin-left: 6.25em;
+            width: 31.25em;
+        }
+
+        .record-description {
+            margin-right: 6.25em;
+            width: 31.25em;
+        }
+
+        .btn2 {
+            display: inline-block;
+            background: #ff670b;
+            color: #121212;
+            padding: 0.8em 1.5em;
+            margin-left: 6.25em;
+            margin-bottom: 3.125em;
+            margin-top: auto;
+            text-decoration: none;
+            border: none;
+            border-radius: 0.3125em;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.6s ease-in-out;
+        }
+
+        .btn2:hover {
+            transform: scale(1.2);
+            background: #fff;
+        }
+        #btn3 {
+            margin-top: 3em;
+            margin-left: 0;
+            transition: 0.6s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="title">
+            <ul>
+                <li><h1>My Portfolio</h1></li>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="projects">
+        <div class="project">
+            <img src="linux.png" class="linux">
+        </div>
+        <div class="project">
+            <img src="record.png" class="record">
+        </div>
+    </div>
+    <div class="descriptions">
+        <div class="description">
+            <p class="linux-description">The Linux Command Explorer is a C project designed to address the challenge of remembering Linux commands by providing a user-friendly interface to access and display essential information such as purpose, syntax, and examples. Utilizing data structures like arrays, the project allows users to navigate through different command types, making it accessible even for those with limited command knowledge. The outcome is an educational tool that empowers users to understand and use Linux commands effectively.</p>
+            <a href="https://drive.google.com/drive/folders/1AnpsfQrWZiRNXsGRdcUd3r5RItnwpkvd?usp=drive_link" download class="btn btn2" target="_blank">Project Files</a>
+        </div>
+        <div class="description">
+            <p class="record-description">The Academics Vault is a user-friendly project designed for efficient administration of student records, offering streamlined processes and enhanced data transparency. It aims to achieve operational efficiency, personalized student support, and adherence to data privacy and compliance standards. The project facilitates informed decision-making through real-time updates and workflow automation.</p>
+            <a href="https://drive.google.com/drive/folders/1gcqYO0QbAV7s4lbYejZN3Ss_jimYSrvI?usp=drive_link" download class="btn btn2" id="btn3" target="_blank">Project Files</a>
+        </div>
+    </div>
+</body>
+</html>
